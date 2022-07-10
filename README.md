@@ -1,5 +1,5 @@
 # TESTS
-https://chetakogo.github.io/tests/s
+https://chetakogo.github.io/tests/
 
 [![Build status](https://ci.appveyor.com/api/projects/status/35hbp5b2gcc6tk1d?svg=true)](https://ci.appveyor.com/project/chetakogo/tests)
 
