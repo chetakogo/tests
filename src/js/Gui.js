@@ -14,10 +14,11 @@ export default class Gui {
   drawCardImages(list) {
     list.forEach((elem) => {
       const img = document.createElement('img');
-      img.src = `./assets/${elem.toLowerCase().replaceAll(' ', '')}.gif`;
+      img.src = './img/dinersclub.png';
       img.classList.add('opacity_img');
       img.classList.add('head_img');
       img.id = `${elem.toLowerCase().replaceAll(' ', '')}`;
+      img.alt = `${elem.toLowerCase().replaceAll(' ', '')}`;
       this.paySystem.appendChild(img);
     });
   }
