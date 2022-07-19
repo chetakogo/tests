@@ -1,3 +1,12 @@
+import American from '../img/americanexpress.png';
+import Diners from '../img/dinersclub.png';
+import Discover from '../img/discovercurved.png';
+import Mastercard from '../img/mastercardcurved.png';
+import Mir from '../img/mir.png';
+import Visa from '../img/visacurved.png';
+
+const cardArr = [American, Diners, Discover, Mastercard, Mir, Visa];
+
 export default class Gui {
   constructor() {
     this.paySystem = document.querySelector('.pay_system');
@@ -12,9 +21,9 @@ export default class Gui {
   }
 
   drawCardImages(list) {
-    list.forEach((elem) => {
+    list.forEach((elem, i) => {
       const img = document.createElement('img');
-      img.src = `../img/${elem.toLowerCase().replaceAll(' ', '')}.png`;
+      img.src = cardArr[i];
       img.classList.add('opacity_img');
       img.classList.add('head_img');
       img.id = `${elem.toLowerCase().replaceAll(' ', '')}`;
